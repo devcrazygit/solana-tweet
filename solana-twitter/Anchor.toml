@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+solana_twitter = "6K2C6hdZDKBb12BLMq6ZJyo6A6PwkcQv9fikvnLtTjBj"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/ubuntu/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
